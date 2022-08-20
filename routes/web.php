@@ -18,4 +18,17 @@ Route::get('/', [MainController::class, 'index'])->name('home');
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+// Route::get('/home', function (){
+//     $role = config('roles.models.role')::where('name', '=', 'Admin')->first();
+//     //choose the default role upon user creation.
+//     auth()->user()->attachRole($role);
+//     return view('home');
+// })->name('home');
+
+
+Route::namespace('Admin')->prefix('admin')->as('admin.')->middleware('auth')->group(function () {
+    Route::get('/', 'HomeController@index')->name('home');
+});
