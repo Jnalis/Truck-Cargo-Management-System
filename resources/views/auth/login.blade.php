@@ -1,5 +1,5 @@
 @extends('layouts.main_app')
-
+@section('title', 'TCMS | Sign in')
 @section('content')
 {{-- <div class="container">
     <div class="row justify-content-center">
@@ -67,12 +67,12 @@
 </div> --}}
 
 
-<div class="bg-image" style="background-image: url('assets/media/photos/photo34@2x.jpg');">
+<div class="bg-image" style="background-image: url('assets/media/img/login.jpg');">
     <div class="row mx-0 bg-black-50">
         <div class="hero-static col-md-6 col-xl-8 d-none d-md-flex align-items-md-end">
             <div class="p-4">
                 <p class="fs-3 fw-semibold text-white">
-                    Get Inspired and Create.
+                    We Deliver What You Request.
                 </p>
                 <p class="text-white-75 fw-medium">
                     Copyright &copy; <span data-toggle="year-copy"></span>
@@ -83,9 +83,9 @@
             <div class="content content-full">
                 <!-- Header -->
                 <div class="px-4 py-2 mb-4">
-                    <a class="link-fx fw-bold" href="index.html">
-                        <i class="fa fa-fire"></i>
-                        <span class="fs-4 text-body-color">code</span><span class="fs-4">base</span>
+                    <a class="link-fx fw-bold" href="">
+                        <i class="fa-solid fa-truck"></i>
+                        <span class="fs-4 text-body-color">TC</span><span class="fs-4">MS</span>
                     </a>
                     <h1 class="h3 fw-bold mt-4 mb-2">Welcome to Your Dashboard</h1>
                     <h2 class="h5 fw-medium text-muted mb-0">Please sign in</h2>
