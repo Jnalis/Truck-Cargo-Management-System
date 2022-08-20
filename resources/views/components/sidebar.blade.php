@@ -1,193 +1,146 @@
-<!-- Sidebar Area Start Here -->
-<div class="sidebar-main sidebar-menu-one sidebar-expand-md sidebar-color">
-    <div class="mobile-sidebar-header d-md-none">
-        <div class="header-logo">
-            <a href="index.html"><img src="{{ asset('assets/img/logo1.png') }}" alt="logo"></a>
+<nav id="sidebar">
+    <!-- Sidebar Content -->
+    <div class="sidebar-content">
+        <!-- Side Header -->
+        <div class="content-header justify-content-lg-center">
+            <!-- Logo -->
+            <div>
+                <span class="smini-visible fw-bold tracking-wide fs-lg">
+                    c<span class="text-primary">b</span>
+                </span>
+                <a class="link-fx fw-bold tracking-wide mx-auto" href="#">
+                    <span class="smini-hidden">
+                        <i class="fa-solid fa-truck text-primary"></i>
+                        <span class="fs-4 text-dual">TC</span><span class="fs-4 text-primary">MS</span>
+                    </span>
+                </a>
+            </div>
+            <!-- END Logo -->
+
+            <!-- Options -->
+            <div>
+                <!-- Close Sidebar, Visible only on mobile screens -->
+                <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                <button type="button" class="btn btn-sm btn-alt-danger d-lg-none" data-toggle="layout"
+                    data-action="sidebar_close">
+                    <i class="fa fa-fw fa-times"></i>
+                </button>
+                <!-- END Close Sidebar -->
+            </div>
+            <!-- END Options -->
         </div>
+        <!-- END Side Header -->
+
+        <!-- Sidebar Scrolling -->
+        <div class="js-sidebar-scroll">
+
+            <!-- Side Navigation -->
+            <div class="content-side content-side-full">
+                <ul class="nav-main">
+                    <li class="nav-main-item">
+                        <a class="nav-main-link active" href="#">
+                            <i class="nav-main-link-icon fa fa-house-user"></i>
+                            <span class="nav-main-link-name">Dashboard</span>
+                        </a>
+                    </li>
+
+
+                    <li class="nav-main-heading">User Interface</li>
+
+
+                    <li class="nav-main-item">
+                        <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true"
+                            aria-expanded="false" href="#">
+                            <i class="nav-main-link-icon fa fa-grip-vertical"></i>
+                            <span class="nav-main-link-name">Users</span>
+                        </a>
+                        <ul class="nav-main-submenu">
+                            <li class="nav-main-item">
+                                <a class="nav-main-link" href="#">
+                                    <span class="nav-main-link-name">Add User</span>
+                                </a>
+                            </li>
+                            <li class="nav-main-item">
+                                <a class="nav-main-link" href="#">
+                                    <span class="nav-main-link-name">View User</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-main-item">
+                        <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true"
+                            aria-expanded="false" href="#">
+                            <i class="nav-main-link-icon fa fa-pencil-ruler"></i>
+                            <span class="nav-main-link-name">Drivers</span>
+                        </a>
+                        <ul class="nav-main-submenu">
+                            <li class="nav-main-item">
+                                <a class="nav-main-link" href="#">
+                                    <span class="nav-main-link-name">Add Driver</span>
+                                </a>
+                            </li>
+                            <li class="nav-main-item">
+                                <a class="nav-main-link" href="#">
+                                    <span class="nav-main-link-name">View Driver</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-main-heading">truck interface</li>
+
+
+                    <li class="nav-main-item">
+                        <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true"
+                            aria-expanded="false" href="#">
+                            <i class="nav-main-link-icon fa fa-vector-square"></i>
+                            <span class="nav-main-link-name">Truck Horse</span>
+                        </a>
+
+                        <ul class="nav-main-submenu">
+                            <li class="nav-main-item">
+                                <a class="nav-main-link" href="#">
+                                    <span class="nav-main-link-name">Add Truck Horse</span>
+                                </a>
+                            </li>
+                            <li class="nav-main-item">
+                                <a class="nav-main-link" href="#">
+                                    <span class="nav-main-link-name">View Truck Horse</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-main-item">
+                        <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true"
+                            aria-expanded="false" href="#">
+                            <i class="nav-main-link-icon fa fa-cogs"></i>
+                            <span class="nav-main-link-name">Truck Trailers</span>
+                        </a>
+
+                        <ul class="nav-main-submenu">
+                            <li class="nav-main-item">
+                                <a class="nav-main-link" href="#">
+                                    <span class="nav-main-link-name">Add Truck Trailer</span>
+                                </a>
+                            </li>
+                            <li class="nav-main-item">
+                                <a class="nav-main-link" href="#">
+                                    <span class="nav-main-link-name">View Truck Trailer</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </li>
+
+
+
+                </ul>
+            </div>
+            <!-- END Side Navigation -->
+        </div>
+        <!-- END Sidebar Scrolling -->
     </div>
-    <div class="sidebar-menu-content">
-        <ul class="nav nav-sidebar-menu sidebar-toggle-view">
-            <li class="nav-item sidebar-nav-item">
-                <a href="#" class="nav-link"><i class="flaticon-dashboard"></i><span>Dashboard</span></a>
-                <ul class="nav sub-group-menu">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link"><i class="fas fa-angle-right"></i>Admin</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="index3.html" class="nav-link"><i class="fas fa-angle-right"></i>Students</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="index4.html" class="nav-link"><i class="fas fa-angle-right"></i>Parents</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="index5.html" class="nav-link"><i class="fas fa-angle-right"></i>Teachers</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="nav-item sidebar-nav-item">
-                <a href="#" class="nav-link"><i class="flaticon-classmates"></i><span>Students</span></a>
-                <ul class="nav sub-group-menu">
-                    <li class="nav-item">
-                        <a href="all-student.html" class="nav-link"><i class="fas fa-angle-right"></i>All
-                            Students</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="student-details.html" class="nav-link"><i class="fas fa-angle-right"></i>Student
-                            Details</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="admit-form.html" class="nav-link"><i class="fas fa-angle-right"></i>Admission
-                            Form</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="student-promotion.html" class="nav-link"><i class="fas fa-angle-right"></i>Student
-                            Promotion</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="nav-item sidebar-nav-item">
-                <a href="#" class="nav-link"><i class="flaticon-multiple-users-silhouette"></i><span>Teachers</span></a>
-                <ul class="nav sub-group-menu">
-                    <li class="nav-item">
-                        <a href="all-teacher.html" class="nav-link"><i class="fas fa-angle-right"></i>All
-                            Teachers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="teacher-details.html" class="nav-link"><i class="fas fa-angle-right"></i>Teacher
-                            Details</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="add-teacher.html" class="nav-link"><i class="fas fa-angle-right"></i>Add
-                            Teacher</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="teacher-payment.html" class="nav-link"><i class="fas fa-angle-right"></i>Payment</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="nav-item sidebar-nav-item">
-                <a href="#" class="nav-link"><i class="flaticon-couple"></i><span>Parents</span></a>
-                <ul class="nav sub-group-menu">
-                    <li class="nav-item">
-                        <a href="all-parents.html" class="nav-link"><i class="fas fa-angle-right"></i>All
-                            Parents</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="parents-details.html" class="nav-link"><i class="fas fa-angle-right"></i>Parents
-                            Details</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="add-parents.html" class="nav-link"><i class="fas fa-angle-right"></i>Add
-                            Parent</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="nav-item sidebar-nav-item">
-                <a href="#" class="nav-link"><i class="flaticon-books"></i><span>Library</span></a>
-                <ul class="nav sub-group-menu">
-                    <li class="nav-item">
-                        <a href="all-book.html" class="nav-link"><i class="fas fa-angle-right"></i>All
-                            Book</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="add-book.html" class="nav-link"><i class="fas fa-angle-right"></i>Add New
-                            Book</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="nav-item sidebar-nav-item">
-                <a href="#" class="nav-link"><i class="flaticon-technological"></i><span>Acconunt</span></a>
-                <ul class="nav sub-group-menu">
-                    <li class="nav-item">
-                        <a href="all-fees.html" class="nav-link"><i class="fas fa-angle-right"></i>All Fees
-                            Collection</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="all-expense.html" class="nav-link"><i class="fas fa-angle-right"></i>Expenses</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="add-expense.html" class="nav-link"><i class="fas fa-angle-right"></i>Add
-                            Expenses</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="nav-item sidebar-nav-item">
-                <a href="#" class="nav-link"><i
-                        class="flaticon-maths-class-materials-cross-of-a-pencil-and-a-ruler"></i><span>Class</span></a>
-                <ul class="nav sub-group-menu">
-                    <li class="nav-item">
-                        <a href="all-class.html" class="nav-link"><i class="fas fa-angle-right"></i>All
-                            Classes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="add-class.html" class="nav-link"><i class="fas fa-angle-right"></i>Add New
-                            Class</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a href="all-subject.html" class="nav-link"><i class="flaticon-open-book"></i><span>Subject</span></a>
-            </li>
-            <li class="nav-item">
-                <a href="class-routine.html" class="nav-link"><i class="flaticon-calendar"></i><span>Class
-                        Routine</span></a>
-            </li>
-            <li class="nav-item">
-                <a href="student-attendence.html" class="nav-link"><i
-                        class="flaticon-checklist"></i><span>Attendence</span></a>
-            </li>
-            <li class="nav-item sidebar-nav-item">
-                <a href="#" class="nav-link"><i class="flaticon-shopping-list"></i><span>Exam</span></a>
-                <ul class="nav sub-group-menu">
-                    <li class="nav-item">
-                        <a href="exam-schedule.html" class="nav-link"><i class="fas fa-angle-right"></i>Exam
-                            Schedule</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="exam-grade.html" class="nav-link"><i class="fas fa-angle-right"></i>Exam
-                            Grades</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a href="transport.html" class="nav-link"><i
-                        class="flaticon-bus-side-view"></i><span>Transport</span></a>
-            </li>
-            <li class="nav-item">
-                <a href="hostel.html" class="nav-link"><i class="flaticon-bed"></i><span>Hostel</span></a>
-            </li>
-            <li class="nav-item">
-                <a href="notice-board.html" class="nav-link"><i class="flaticon-script"></i><span>Notice</span></a>
-            </li>
-            <li class="nav-item">
-                <a href="messaging.html" class="nav-link"><i class="flaticon-chat"></i><span>Messeage</span></a>
-            </li>
-            <li class="nav-item sidebar-nav-item">
-                <a href="#" class="nav-link"><i class="flaticon-menu-1"></i><span>UI Elements</span></a>
-                <ul class="nav sub-group-menu">
-                    <li class="nav-item">
-                        <a href="button.html" class="nav-link"><i class="fas fa-angle-right"></i>Button</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="grid.html" class="nav-link"><i class="fas fa-angle-right"></i>Grid</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="ui-tab.html" class="nav-link"><i class="fas fa-angle-right"></i>Tab</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="progress-bar.html" class="nav-link"><i class="fas fa-angle-right"></i>Progress
-                            Bar</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a href="map.html" class="nav-link"><i class="flaticon-planet-earth"></i><span>Map</span></a>
-            </li>
-            <li class="nav-item">
-                <a href="account-settings.html" class="nav-link"><i
-                        class="flaticon-settings"></i><span>Account</span></a>
-            </li>
-        </ul>
-    </div>
-</div>
-<!-- Sidebar Area End Here -->
+    <!-- Sidebar Content -->
+</nav>
